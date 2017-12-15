@@ -11,7 +11,26 @@
 <link rel="stylesheet" href="./index_files/style.css">
 
 <!--<base target="_blank">--><base href="." target="_blank">
-<script type="text/javascript" async="" src="./index_files/watch.js.Без названия"></script><script>window.cdn_path="//cdn.evrhst.com/1132/";</script></head>
+<script type="text/javascript" async="" src="./index_files/watch.js.Без названия"></script><script>window.cdn_path="//cdn.evrhst.com/1132/";</script>
+    
+    <!--    передача UTM-->
+
+<script type="text/javascript">
+
+        var param = location.search;
+
+        jQuery(document).ready(function() {
+            jQuery('a').each(function() {
+                jQuery(this).attr('href', 'http://normalife.salever.ru/' + param);
+            });
+        });
+
+
+</script>
+
+<!--    передача UTM-->
+    
+    </head>
 
 <body cz-shortcut-listen="true">
 
@@ -466,21 +485,6 @@
 			</div>
 		</div>
     
-<!--    передача UTM-->
 
-<script type="text/javascript">
-
-        var param = location.search;
-
-        jQuery(document).ready(function() {
-            jQuery('a').each(function() {
-                jQuery(this).attr('href', 'http://normalife.salever.ru/' + param);
-            });
-        });
-
-
-</script>
-
-<!--    передача UTM-->
 	
 	</body></html>
